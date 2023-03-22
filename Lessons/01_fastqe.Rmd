@@ -1,10 +1,15 @@
 ---
-title: "Fun Introductory Command Line Exercise: Next Generation Sequencing (NGS) Quality Analysis with Emoji"
+title: "Next Generation Sequencing (NGS) Quality Analysis with Emoji"
+subtitle: "Developed by: Ray Enke, Rachael St. Jaques1, Max Maza, Caylin Murray, Sabrina Robertson, Andrew Lonsdale, & Jason Williams. Modified by Bárbara Bitarello"
+output:
+  html_document:
+    toc: true
+    theme: united
 ---
 
-Developed by: Ray Enke, Rachael St. Jaques1, Max Maza, Caylin Murray, Sabrina Robertson, Andrew Lonsdale, & Jason Williams. Modified by Bárbara Bitarello
 
-## Table of Contents
+
+## Goals
 
 * Introduce students to writing basic command line scripts
 * Analyze & assess the quality of FASTQ formatted NGS data
@@ -169,8 +174,8 @@ Click on the fastp.html file in the left sidebar pane inside `filestoshare/fastq
 
 **Q14) From the “Summary” data in your HTML fastp report, how many reads are in this FASTQ file before and after filtering?**
 
-
-## Learn more
+---
+# Learn More
 
 [https://fastqe.com/](https://fastqe.com/)
 
