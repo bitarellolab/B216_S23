@@ -76,19 +76,13 @@ Once you open a terminal, run the **"path to working directory"** command:
 pwd
 ```
 
-* Before we move further, go to the left sidebar pane and click on the large blue botton that says "+".
+* Before we move further, open a regular text file in your computer.
 
-* In "other", select textfile. this will open a textfile called `Untitled1.txt`.
+* Name it so that it reflects your BMC/Haverford username. E.g. my BMC email is bbitarello@brynmawr.edu, so my filename would be `bbitarello_answer_sheet.txt`.
 
-* Right-click on `Untitled1.txt` and rename the file.
+* All done! Now, whenever a question comes up, type your answers into that file. 
 
-* Rename it so that it reflects your BMC/Haverford username. E.g. my BMC email is bbitarello@brynmawr.edu, so my filename would be `bbitarello_answer_sheet.txt`.
-
-* All done! Now, whenever a question comes up, type your answers into that file. Save it often.
-
-* When you finish today's lab, go to the left sidebar pane and right-click on the file with your name and select "Download". 
-
-*Upload that to Moodle.
+*Upload that to Moodle when you're done.
 
 
 **Q1. What does this show you? (I.e., what is the output of the command above)**
@@ -237,7 +231,7 @@ Now move into the `fastq` directory. That's where we will work now.
 cd fastq
 ```
 
-When you're done here, go to the left sidebar and open the file called 
+When you're done here, go to the left sidebar and open the file called `01_fastqe.html`.
 
 # Learn More
 
@@ -245,6 +239,6 @@ The Software Carpentry Foundation has great stuff: e.g. [https://swcarpentry.git
 
 DataCamp has bash courses and they are not bad!
 
-### The end!
+
 
 
