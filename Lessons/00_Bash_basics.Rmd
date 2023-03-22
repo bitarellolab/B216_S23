@@ -4,12 +4,7 @@ subtitle: "*Credit: Heavily borrowed from [Software Carpentry Foundation](https:
 output:
   html_document:
     toc: true
-    theme: united
 ---
-
-
-
-
 
 
 ## Key Points
@@ -57,7 +52,7 @@ In your life, know that you can access a terminal in any computer:
 * Windows: not ideal but possible. I don't know how to do it though. Good luck!
 
 
-### Why should I use the command line?
+## Why should I use the command line?
 
 It may not seem worth your while to run a program ONCE using the command-line, but when you find yourself contemplating manually repeating a computational task 100 times, the appeal becomes clear!
 
@@ -210,6 +205,9 @@ Use the "word count" command, `wc`:
 wc sarscov2genome.fasta 
 ```
 
+**Q10. What did this do?**
+
+
 Great! Now let's move up one directory. Up means towards the directory that contains the one you are in. Whenever you are in a subdirectory, you can go back to the one “above” it by simply typing `../`.
 
 ```{bash, echo=T, eval=F}
@@ -223,12 +221,35 @@ Check that it worked by typing `pwd` once again:
 #type your command in your terminal 
 ```
 
-Now move into the `fastq` directory. That's where we will work now.
+Now move into the `fastq/gartersnake` directory. That's where we will work now.
 
 
 ```{bash, echo=T, eval=F}
-cd fastq
+cd fastq/gartersnake
 ```
+
+
+### Seeing the contents of a file bit by bit
+
+Let's combine what we've learned.
+
+First, list the contents in this directory.
+
+Let's look at the `Female2-oral1.fastq` file.
+
+**Q11. How many lines does it have? Use the commands we learned. Copy your command and output to your answer sheet.**
+
+
+Hopefully that convinced you that you don't want to try and open that file! But what if you want to look at the contents bit by bit, instead of a fixed number of lines?
+
+The `more` command!
+
+We saw how `head` and `tail` work. Here is another useful one: the `more` command. Try it on `Female2-oral1.fastq`. It will show you the contents of the file until your terminal is full. 
+
+* Tap `enter` to keep seeing what comes next in the file.
+
+* Congrats! You looked at a giant file without having to open it!
+
 
 When you're done here, go to the left sidebar and open the file called `01_fastqe.html`.
 
@@ -238,6 +259,8 @@ When you're done here, go to the left sidebar and open the file called `01_fastq
 The Software Carpentry Foundation has great stuff: e.g. [https://swcarpentry.github.io/shell-novice/01-intro/index.html](https://swcarpentry.github.io/shell-novice/01-intro/index.html)
 
 DataCamp has bash courses and they are not bad!
+
+The `wc` command in Linux. [https://www.howtogeek.com/812441/wc-command-in-linux/](https://www.howtogeek.com/812441/wc-command-in-linux/)
 
 
 
