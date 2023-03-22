@@ -1,13 +1,10 @@
 ---
 title: "Fun Introductory Command Line Exercise: Next Generation Sequencing (NGS) Quality Analysis with Emoji"
-author: "Developed by: Ray Enke, Rachael St. Jaques1, Max Maza, Caylin Murray, Sabrina Robertson, Andrew Lonsdale, & Jason Williams. Modified by Bárbara Bitarello"
-output:
-  html_document:
-    df_print: paged
 ---
 
+Developed by: Ray Enke, Rachael St. Jaques1, Max Maza, Caylin Murray, Sabrina Robertson, Andrew Lonsdale, & Jason Williams. Modified by Bárbara Bitarello
 
-## Learning Goals: Use basic command line coding to:
+## Table of Contents
 
 * Introduce students to writing basic command line scripts
 * Analyze & assess the quality of FASTQ formatted NGS data
@@ -17,7 +14,7 @@ output:
 
 * The 1st step of any Next Generation Sequencing (NGS) analysis pipeline is checking the quality of the raw sequencing reads in each FASTQ formatted file. If the sequence quality is poor, then your resulting downstream analysis will be inaccurate and misleading. 
 
-* FastQC is a popular software used to provide an overview of basic quality metrics for NGS data. In this lesson, you will use an even more universal form of communication to analyze FASTQ files, THE EMOJI 😻😻😻. 
+* **FastQC** is a popular software used to provide an overview of basic quality metrics for NGS data. In this lesson, you will use an even more universal form of communication to analyze FASTQ files, THE EMOJI 😻😻😻. 
 
 * FASTQE is a program that analyzes FASTQ files & reads out an emoji output as an indicator of the sequence’s quality in the file. So, a high quality read may look like this 😃, while this symbol 💩 indicates... well you get the idea.
 
@@ -28,36 +25,15 @@ output:
 
 ## Technical requirements/limitations:
 
-* FASTQE software is able to run natively on Mac OS or Linux computer with Anaconda installed. Since Windows does not support the use of emoticons (😟😱😿), this implementation of the lesson can be also be run in a Jupyter notebook on any machine!
-
-* Use your own machine (linux or mac) if you have anaconda and Python version >=3 installed.
-
-* Use jupyter lab online if you don't or prefer the online version. If so, use the "upload" button to upload the file "fastqe.ipynbd". Click on it and open it. Open also a terminal window on jupyter lab and follow the instructions.
 
 * The FASTQE program is limited to short read NGS data of 500bp/read or less.
 
 ---
 
 
-## Part 1: Download FASTQ files and run fastqe
+## Let's install fastqe
 
-Jupyter allows you to run commands by selecting a cell and then click the play button or Cntrl+Enter.
-
-For example, running the next cell executes the pwd (print working directory) command, which will tell you what directory this notebook is located in. Try it:
-
-```{bash, eval=F}
-pwd
-```
-
-If you’ve printed a path that doesn’t make sense (i.e. the directory you navigated to is the incorrect directory) how would you go back to the previous directory? (hint, it includes the change directory command)
-
-* Hint, type your commands in the cell below to see how the cd (change directory) command works.
-* Next, navigate to the data folder using the cd /home/joyvan/data command
-* Execute the pwd command again to confirm that you are in your desktop directory
-
-**Your output for the pwd command must be /home/joyvan/data - otherwise the rest of the lesson will not work because you will not be in the correct directory**
-
-Now, create a subdirecory within the one you're in using the "make directory". command
+Now, create a subdirectory within the one you're in using the "make directory". command
 
 * Usage: mkdir [dir_name]
 
@@ -65,13 +41,12 @@ After you create that directory, head over to it using the "change directory" (c
 
 ## Step 1
 
-Using the wget command, download the three fastq files listed below:
-```{bash, eval=F}
-https://raw.githubusercontent.com/bitarellolab/Teaching/main/B216/filestoshare/fastq/Female2-oral1.fastq
-https://raw.githubusercontent.com/bitarellolab/Teaching/main/B216/filestoshare/fastq/Male5-oral1.fastq
-https://raw.githubusercontent.com/bitarellolab/Teaching/main/B216/filestoshare/fastq/Male5-oral2.fastq
+Go to the subdirectory called `dmel` (as in Drosophila melanogaster):
 
+```{bash, echo=T, eval=F}
+cd filestoshare/
 ```
+
 
 The wget command we will use has three components
 
