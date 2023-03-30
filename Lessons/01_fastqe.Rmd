@@ -151,7 +151,7 @@ Phred scores use a logarithmic scale, and are represented by ASCII characters, m
 
 ![Credit:https://www.hadriengourle.com/tutorials/file_formats/#the-fastq-format](images/phred.png)
 
-**Q13) Phred score of ≤20 is considered a poor quality base call. How many poor quality base calls are at the 3’ end of this read?**
+**Q14) Phred score of ≤20 is considered a poor quality base call. How many poor quality base calls are at the 3’ end of this read?**
 
 
 
@@ -169,6 +169,7 @@ pip install scikit-learn
 pip install tensorflow
 conda create -n assembly -c conda-forge -c bioconda fastp -y
 conda activate assembly
+
 ```
 
 FASTP gives a more conventional readout of the .fastq file data. Fastp is similar to the famous FastQC; however, it also has a trimming tool to cut out or filtering the low quality sequences in our file.
@@ -199,7 +200,7 @@ You should now have 3 new files in your fastp folder
 
 Click on the fastp.html file in the left sidebar pane inside `filestoshare/fastq/` on the left to examine this report.
 
-**Q14) From the “Summary” data in your HTML fastp report, how many reads are in this FASTQ file before and after filtering?**
+**Q15) From the “Summary” data in your HTML fastp report, how many reads are in this FASTQ file before and after filtering?**
 
 ---
 # Learn More
