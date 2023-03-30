@@ -2,8 +2,10 @@
 title: "Command line basics"
 subtitle: "*Credit: Heavily borrowed from [Software Carpentry Foundation](https://swcarpentry.github.io/shell-novice/01-intro/index.html)*"
 output:
+  pdf_document:
+    toc: yes
   html_document:
-    toc: true
+    toc: yes
 ---
 
 
@@ -254,7 +256,8 @@ We saw how `head` and `tail` work. Here is another useful one: the `more` comman
 When you're done here, go to the left sidebar and open the file called `01_fastqe.html`.
 
 ---
-# Learn More
+
+## Learn More
 
 The Software Carpentry Foundation has great stuff: e.g. [https://swcarpentry.github.io/shell-novice/01-intro/index.html](https://swcarpentry.github.io/shell-novice/01-intro/index.html)
 
@@ -262,6 +265,7 @@ DataCamp has bash courses and they are not bad!
 
 The `wc` command in Linux. [https://www.howtogeek.com/812441/wc-command-in-linux/](https://www.howtogeek.com/812441/wc-command-in-linux/)
 
-
+The `pwd` command in Linux.
+[https://phoenixnap.com/kb/pwd-linux](https://phoenixnap.com/kb/pwd-linux)
 
 

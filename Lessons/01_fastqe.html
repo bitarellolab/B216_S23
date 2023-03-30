@@ -377,11 +377,10 @@ software</a></li>
 <li><a href="#step-2-running-fastqe" id="toc-step-2-running-fastqe">Step
 2: Running fastqe</a></li>
 <li><a href="#step-3-using-the-help-page" id="toc-step-3-using-the-help-page">Step 3: Using the help page</a></li>
-<li><a href="#step-4.-scale" id="toc-step-4.-scale">Step 4. Scale</a>
-<ul>
+<li><a href="#step-4.-scale" id="toc-step-4.-scale">Step 4.
+Scale</a></li>
 <li><a href="#step-5.-quality" id="toc-step-5.-quality">Step 5.
 Quality</a></li>
-</ul></li>
 <li><a href="#step-6.-fastp" id="toc-step-6.-fastp">Step 6.
 FASTP</a></li>
 <li><a href="#learn-more" id="toc-learn-more">Learn More</a></li>
@@ -398,7 +397,7 @@ FASTP</a></li>
 <p><strong>FastQC</strong> is a popular software used to provide an
 overview of basic quality metrics for NGS data. In this lesson, you will
 use an even more universal form of communication to analyze FASTQ files,
-THE EMOJI 😻😻😻.</p>
+THE EMOJI!</p>
 </div>
 <div id="background" class="section level2">
 <h2>Background</h2>
@@ -489,7 +488,7 @@ the reads.</li>
 <li><p><a href="https://fastqe.com/">FASTQE</a> is a program that
 analyzes FASTQ files &amp; reads out an emoji output as an indicator of
 the sequence’s quality in the file. So, a high quality read may look
-like this 😃, while this symbol 💩 indicates… well you get the
+like a smily face, while the poop symbol indicates… well you get the
 idea.</p></li>
 <li><p>Like the popular FastQC software, FASTQE can be used to analyze
 FASTQ file quality whether it’s from a genome sequencing project, an
@@ -535,10 +534,9 @@ the current working directory.</p></li>
 take ~30 seconds/</p>
 <p>First, list what’s in this directory:</p>
 <pre class="bash"><code>fastqe *fastq</code></pre>
-<p><strong>Q12) What are the advantages and disadvantages to using the
-command fastqe .fastq rather than fastqe for each of your files
-(e.g. fastqe Female2-oral1.fastq … fastqe Male5-oral1.fastq…)
-?</strong></p>
+<p>**Q12) What are the advantages and disadvantages to using the command
+fastqe *.fastq rather than fastqe for each of your files (e.g. fastqe
+Female2-oral1.fastq … fastqe Male5-oral1.fastq…) ?**</p>
 <p><strong>Q13) Which one of the three files seems to have lower quality
 than the others?</strong></p>
 </div>
@@ -564,8 +562,9 @@ associated with each emoji in your output. Try this just for the
 you type –scale). This will take a few seconds to run.</p>
 <pre class="bash"><code>#type your command in your terminal
 fastqe Male5-oral1.fastq --scale</code></pre>
-<div id="step-5.-quality" class="section level3">
-<h3>Step 5. Quality</h3>
+</div>
+<div id="step-5.-quality" class="section level2">
+<h2>Step 5. Quality</h2>
 <p>The quality, also called phred score, is the probability that the
 corresponding basecall is incorrect.</p>
 <p>Phred scores use a logarithmic scale, and are represented by ASCII
@@ -577,7 +576,6 @@ characters, mapping to a quality usually going from 0 to 40.</p>
 <p><strong>Q13) Phred score of ≤20 is considered a poor quality base
 call. How many poor quality base calls are at the 3’ end of this
 read?</strong></p>
-</div>
 </div>
 <div id="step-6.-fastp" class="section level2">
 <h2>Step 6. FASTP</h2>
@@ -623,8 +621,9 @@ filtering?</strong></p>
 </div>
 <div id="learn-more" class="section level1">
 <h1>Learn More</h1>
-<p><a href="https://fastqe.com/">https://fastqe.com/</a></p>
-<p><a href="https://github.com/OpenGene/fastp">https://github.com/OpenGene/fastp</a></p>
+<p>FASTQE Official Webpage. <a href="https://fastqe.com/">https://fastqe.com/</a></p>
+<p>FASTP Github Repository. <a href="https://github.com/OpenGene/fastp">https://github.com/OpenGene/fastp</a></p>
+<p>FASTQ files and Quality Control. <a href="https://datacarpentry.org/wrangling-genomics/02-quality-control/index.html">https://datacarpentry.org/wrangling-genomics/02-quality-control/index.html</a></p>
 </div>
 
 

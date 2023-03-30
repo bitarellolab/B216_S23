@@ -1,9 +1,12 @@
 ---
 title: "Next Generation Sequencing (NGS) ity Analysis with Emoji"
-subtitle: "Developed by: Ray Enke, Rachael St. Jaques1, Max Maza, Caylin Murray, Sabrina Robertson, Andrew Lonsdale, & Jason Williams. Modified by Bárbara Bitarello"
+subtitle: 'Developed by: Ray Enke, Rachael St. Jaques1, Max Maza, Caylin Murray, Sabrina
+  Robertson, Andrew Lonsdale, & Jason Williams. Modified by Bárbara Bitarello'
 output:
   html_document:
-    toc: true
+    toc: yes
+  pdf_document:
+    toc: yes
 ---
 
 
@@ -14,7 +17,7 @@ output:
 * Analyze & assess the quality of FASTQ formatted NGS data
 * Trim/filter low quality reads in FASTQ files
 
-**FastQC** is a popular software used to provide an overview of basic quality metrics for NGS data. In this lesson, you will use an even more universal form of communication to analyze FASTQ files, THE EMOJI 😻😻😻. 
+**FastQC** is a popular software used to provide an overview of basic quality metrics for NGS data. In this lesson, you will use an even more universal form of communication to analyze FASTQ files, THE EMOJI! 
 
 ## Background
 
@@ -62,7 +65,7 @@ The main functions of FastQC are:
 
 ### What about FASTQE?
 
-* [FASTQE](https://fastqe.com/) is a program that analyzes FASTQ files & reads out an emoji output as an indicator of the sequence’s quality in the file. So, a high quality read may look like this 😃, while this symbol 💩 indicates... well you get the idea.
+* [FASTQE](https://fastqe.com/) is a program that analyzes FASTQ files & reads out an emoji output as an indicator of the sequence’s quality in the file. So, a high quality read may look like a smily face, while the poop symbol indicates... well you get the idea.
 
 * Like the popular FastQC software, FASTQE can be used to analyze FASTQ file quality whether it’s from a genome sequencing project, an RNA-seq project, a ChIP-seq project, etc. 
 
@@ -86,7 +89,7 @@ The main functions of FastQC are:
 In your terminal, type:
 
 
-````{bash, echo=T, eval=F}
+```{bash, echo=T, eval=F}
 pip install fastqe
 ```
 
@@ -109,7 +112,7 @@ First, list what's in this directory:
 fastqe *fastq
 ```
 
-**Q12) What are the advantages and disadvantages to using the command fastqe .fastq rather than fastqe for each of your files (e.g. fastqe Female2-oral1.fastq ... fastqe Male5-oral1.fastq...) ?**
+**Q12) What are the advantages and disadvantages to using the command fastqe  *.fastq rather than fastqe for each of your files (e.g. fastqe Female2-oral1.fastq ... fastqe Male5-oral1.fastq...) ?**
 
 
 **Q13) Which one of the three files seems to have lower quality than the others?**
@@ -142,7 +145,7 @@ Add the --scale option to the fastqe command to view the Phred score associated 
 fastqe Male5-oral1.fastq --scale
 ```
 
-### Step 5. Quality
+## Step 5. Quality
 
 The quality, also called phred score, is the probability that the corresponding basecall is incorrect.
 
@@ -205,6 +208,9 @@ Click on the fastp.html file in the left sidebar pane inside `filestoshare/fastq
 ---
 # Learn More
 
-[https://fastqe.com/](https://fastqe.com/)
+FASTQE Official Webpage. [https://fastqe.com/](https://fastqe.com/)
 
-[https://github.com/OpenGene/fastp](https://github.com/OpenGene/fastp)
+FASTP Github Repository. [https://github.com/OpenGene/fastp](https://github.com/OpenGene/fastp)
+
+FASTQ files and Quality Control. [https://datacarpentry.org/wrangling-genomics/02-quality-control/index.html](https://datacarpentry.org/wrangling-genomics/02-quality-control/index.html)
+
