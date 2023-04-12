@@ -2,9 +2,9 @@
 title: "Command line basics"
 subtitle: "*Credit: Heavily borrowed from [Software Carpentry Foundation](https://swcarpentry.github.io/shell-novice/01-intro/index.html)*"
 output:
-  pdf_document:
-    toc: yes
   html_document:
+    toc: yes
+  pdf_document:
     toc: yes
 ---
 
@@ -154,9 +154,9 @@ cd ~
 # ~ is a shortcut that makes you not have to type the entire path to your home folder
 ```
 
-Check that it worked. You should now be at `/home/jovyan`. Note: if you were using your personal computer, say a Mac, this would be `/home/janedoe`, assuming your user name is janedoe. Up here in this workspace, all user names are the same: `jovian`.
+Check that it worked. You should now be at `/home/jovyan`. Note: if you were using your personal computer, say a Mac, this would be `/home/janedoe`, assuming your user name is janedoe. Up here in this workspace, all user names are the same: `jovyan`.
 
-**Trivia:** why do you think the user name in this virtual space is `jovian`?
+**Trivia:** why do you think the user name in this virtual space is `jovyan`?
 
 **Q6. How can you check that you are indeed there? What command would you use?**
 
@@ -168,7 +168,6 @@ Now, let's demonstrate how you can access the contents of a file without "openin
 Go back to the `filestoshare/fasta` directory.
 
 **Q7. What command do you use for this?**
-
 
 
 
